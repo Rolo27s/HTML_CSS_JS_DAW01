@@ -1,0 +1,36 @@
+* {
+    position: relative;
+    max-width: 600px;
+}
+
+html {
+    margin: 0 auto;
+}
+
+h1, h2, h3, li {
+    color: #BD8100;
+}
+
+p {
+    color: #d74c0b;
+    margin-left: 1em;
+}
+
+.content-p {
+    border-left: 1em solid #BD8100;
+    margin-left: 3em;
+}
+
+img {
+    z-index: -1;
+    animation-name: animated;
+    animation-duration: 4s;
+    transition: all 2s;
+}
+
+@keyframes animated {
+    0%      {filter: blur(2px);}
+    25%     {filter: blur(2px) sepia(50%); transform: scale(1);}
+    50%     {filter: blur(1px) contrast(200%) sepia(200%); transform: scale(1.3) translateY(40px);}
+    100%    {filter: sepia(50%); transform: scale(1);}
+}
