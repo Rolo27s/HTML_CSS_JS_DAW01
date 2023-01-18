@@ -1,2 +1,5 @@
-# Mini proyectos basicos
-## Landing pages. Proyectos web a solo una pagina - aplicación de página única (single-page application) 
+# Proyectos básicos
+* Landing pages <br>
+    *Proyectos web a solo una pagina - aplicación web de página única (single-page application)*
+* Basic pages <br>
+* etc
