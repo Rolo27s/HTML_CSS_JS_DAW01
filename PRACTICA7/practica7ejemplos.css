@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+html {
+    width: 99%;
+    width: 1030px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+body {
+    width: 95%;
+    width: 1030px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: linear-gradient(to bottom, #B6C5D8, #fff);
+}
+
+header {
+    height: 217px;
+    background-image: url(images/bg_main.jpg);
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+/* Hay algunos borders con 0 pixeles para la edicion y el reconocimiento de los 
+diferentes contenedores con idea de facilitar el diseño. En la "fase final" se declararon como 0px. Realmente lo interesante es declarar una variable para manipular todos los bordes al mismo tiempo con un solo cambio. */
+
+.fondo {
+    height: 700px;
+    width: 960px;
+}
+
+.container {
+    background-color: #fff;
+    border: 0px solid red;
+    height: 700px;
+}
+
+.announcements {
+    margin-left: 60px;
+    float: left;
+    width: 400px;
+    height: 400px;
+    border: 0px solid yellow;
+}
+
+.announcements img {
+    width: 100%;
+}
+
+.announcements_info {
+    background-image: url(images/scroll_middle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ppalBody {
+    float: left;
+    width: 520px;
+    height: 660px;
+    border: 0px solid blue;
+}
+
+.announcements,
+.ppalBody {
+    margin: 6px;
+}
+
+.pergaminoArriba {
+    top: 4px;
+}
+
+h1 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 3.2em;
+    left: 400px;
+    top: 44px;
+}
+
+
+footer {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 2px dashed #B6C5D8;
+    border-bottom: 2px dashed #B6C5D8;
+    color: #0c1d33;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.announcements_info h2 {
+    left: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-style: italic;
+    font-size: 1.8em;
+    color: #1c3f70;
+    margin-bottom: 10px;
+}
+
+.announcements_info_list {
+    left: 80px;
+    width: 270px;
+    border: 0px solid brown;
+}
+
+.last li {
+    list-style-image: url("images/bullet.png");
+    padding: 4px;
+    width: 260px;
+    color: rgb(29, 58, 95);
+}
+
+.ppalBody h2 {
+    color: #1c3f70;
+}
+
+.ppalBody h2::after {
+    content: "";
+    display: block;
+    height: 14px;
+    background-image: url(images/underline.png);
+    background-repeat: no-repeat;
+}
+
+.ppalBody p {
+    margin: 20px 0px;
+}
+
+.ppalBody h2+p {
+    margin-top: 10px;
+}
