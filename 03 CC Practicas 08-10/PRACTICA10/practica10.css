@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-left: 1px dashed rgb(10, 121, 43);
+}
+
+li {
+    float: left;
+    border-top: 1px dashed rgb(10, 121, 43);
+    border-right: 1px dashed rgb(10, 121, 43);
+    border-bottom: 1px dashed rgb(10, 121, 43);
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 4px 6px;
+    text-decoration: none;
+    background-color: #c7c7c7;
+    width: 155px;
+}
+
+p {
+    display: inline-block;
+}
+
+li a:hover:not(.focus) {
+    background-color: #80ee37;
+    font-weight: 600;
+}
+
+.focus {
+    background-color: #ffffff;
+    font-weight: 600;
+    background-image: url(icons/clip.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+}
+
+@media all and (max-width:550px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        border-left: 1px dashed rgb(10, 121, 43);
+        border-right: 0px dashed rgb(10, 121, 43);
+        border-top: 0px dashed rgb(10, 121, 43);
+        border-bottom: 0px dashed rgb(10, 121, 43);
+    }
+
+    li {
+        clear: both;
+        border-top: 1px dashed rgb(10, 121, 43);
+        border-right: 1px dashed rgb(10, 121, 43);
+        border-bottom: 1px dashed rgb(10, 121, 43);
+        border-left: 0px dashed rgb(10, 121, 43);
+    }
+
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        padding: 4px 6px;
+        text-decoration: none;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    li a:hover:not(.focus) {
+        background-color: #80ee37;
+        font-weight: 600;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+}
