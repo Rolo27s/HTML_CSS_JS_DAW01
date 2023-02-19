@@ -1,0 +1,322 @@
+:root {
+    --tamanoAnuncio: 25%;
+    --color-Naranja: #FBEF99;
+    --color-VerdeOscuro: #294E56;
+    --color-VerdeClaro: #5F9794;
+    --color-VerdeMuyClaro: #CEDA9A;
+    --color-CelesteClaro: #B2D6DE;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* HEADER */
+/*--------------------------------------*/
+
+#banner {
+    border-bottom: 1px solid var(--color-VerdeOscuro);
+    background-image: url(images/banner_flores.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#background {
+    background: linear-gradient(transparent 68%, var(--color-Naranja));
+}
+
+.logo {
+    background-image: url(images/logo.gif);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+#nav ul {
+    display: inline-flex;
+    gap: 4px;
+    align-items: end;
+    margin: 2px;
+}
+
+#nav ul li {
+    background-color: var(--color-VerdeOscuro);
+    padding: 2px;
+    min-width: 100px;
+    text-indent: 4px;
+}
+
+#nav ul li:hover {
+    background-color: var(--color-VerdeClaro);
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: var(--color-Naranja);
+}
+
+/* MAIN */
+/*--------------------------------------*/
+
+#wrapper {
+    width: 100%;
+}
+
+#main {
+    float: right;
+    width: calc(100% - var(--tamanoAnuncio));
+    border-left: 1px solid grey;
+    font-family: Arial, sans-serif;
+    padding: 4px;
+}
+
+#lead {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    padding: 4px;
+    border-bottom: 2px dotted var(--color-VerdeClaro);
+    color: #102b1d;
+}
+
+span.section {
+    color: #bbb;
+    font-weight: 100;
+}
+
+#subForm>p {
+    font-weight: 600;
+    line-height: 1.5;
+    width: 100%;
+}
+
+/* Apartado infernal de radio buttoms */
+/* --------------------------------------- */
+#subForm p,
+.radioContainer {
+    display: flex;
+    font-weight: 600;
+    padding-right: 25%;
+}
+
+#subForm>* {
+    padding: 10px;
+}
+
+#subForm *>* {
+    width: 50%;
+}
+
+.radioSelection {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-right: 25%;
+    gap: 1em;
+}
+
+.radioSelection .radioLabel {
+    flex-basis: auto;
+}
+
+/* RadioLabel debe tener display flex porque contiene a radioButtom */
+.radioLabel {
+    display: flex;
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.radioButtom {
+    flex-basis: 20px;
+    width: 20px;
+    margin: 0;
+}
+
+/* --------------------------------------- */
+.alinearDerecha {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 6px;
+    color: #102b1d;
+}
+
+.inputBoxEdit {
+    background-color: var(--color-Naranja);
+    border: 2px inset grey;
+}
+
+/* Select */
+#refer {
+    background-color: #eee;
+    border-radius: 6px;
+    width: auto;
+    padding: 2px;
+}
+
+#refer:focus {
+    background-color: orange;
+}
+
+option {
+    background-color: orange;
+}
+
+/* ¿Por que no me funciona este Hover? */
+option:hover {
+    background-color: grey;
+}
+
+#subscribe {
+    width: auto;
+    position: relative;
+    top: -12px;
+    background-color: #CEDA9A;
+    border: 2px outset grey;
+}
+
+.privacy {
+    color: var(--color-VerdeClaro);
+    line-height: 1.3em;
+    font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 0.9em;
+}
+
+/* ----------------------------------------------- */
+/* ANUNCIO */
+#announce {
+    float: left;
+    width: var(--tamanoAnuncio);
+    background: linear-gradient(var(--color-VerdeMuyClaro), #fff 50%);
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+#announce ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#announce ul li:first-of-type {
+    border-top: 11px solid var(--color-VerdeOscuro);
+}
+
+#announce ul li {
+    border-bottom: 1px solid var(--color-VerdeClaro);
+    padding: 4px;
+}
+
+#announce ul li:hover {
+    background-color: var(--color-VerdeClaro);
+}
+
+#announce ul li:hover a {
+    color: var(--color-Naranja);
+}
+
+#announce ul li a {
+    text-decoration: none;
+    color: var(--color-VerdeOscuro);
+}
+
+span.title {
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* FOOTER */
+/*--------------------------------------*/
+
+#copyright {
+    clear: both;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-style: italic;
+    font-size: 0.9em;
+    text-indent: 10px;
+    padding: 2px;
+}
+
+/* PRIMER MEDIA-QUERY DE 675px A 900px */
+/* formato para tablets */
+@media all and (min-width:675px) and (max-width:900px) {
+    .alinearDerecha {
+        justify-content: flex-start;
+    }
+
+    .radioContainer, .radioSelection, #subForm p {
+        padding-right: 5%;
+    }
+}
+
+/* formato para moviles */
+@media all and (max-width:675px) {
+       
+    #nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0;
+        opacity: 0.65;
+    }
+
+    #nav ul li {
+        height: 49%;
+        width: 100%;
+    }
+    #nav ul li a{
+        padding-left: 15%;
+    }
+    #main {
+        clear: both;
+        width: 100%;
+    }
+
+    #announce {
+        float: none;
+        clear: both;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #announce ul {
+        display: flex;
+    }
+
+    #subscribe {
+        top: -35px;
+    }
+
+    #subForm p, .radioContainer {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .radioSelection{
+        flex-direction: column;
+    }
+
+    /* Esto no funciona y no se porque. Si quito first child si lo entiende */
+    .radioContainer .radioSelection{
+        margin-top: 1em;
+    }
+
+    #lead {
+        font-size: 1em;
+    }
+
+    #subForm *>* {
+        width: 100%;
+    }
+
+    .alinearDerecha {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        background-size: contain;
+        height: 45px;
+    }
+}
