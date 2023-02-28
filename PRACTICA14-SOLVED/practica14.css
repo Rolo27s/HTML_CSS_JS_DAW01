@@ -1,0 +1,299 @@
+:root {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* --------------------------------- */
+/* HEADER */
+#banner {
+    background-image: url(images/banner.png), url(images/banner-\ overflow.png);
+    background-repeat: no-repeat, repeat;
+    height: 90px;
+}
+
+#banner ul {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 600;
+    gap: 1em;
+    margin-right: 1em;
+}
+
+#banner ul li {
+    background-color: #1B3A88;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 0.1em 0.25em 0.25em 0.25em;
+}
+
+#banner ul li a {
+    color: #eee;
+    font-size: 0.75em;
+}
+
+#banner ul li:hover {
+    background-color: #AFF40F;
+}
+
+#banner ul li:hover a {
+    font-weight: 600;
+    color: #233613;
+}
+
+/* --------------------------------- */
+/* CONTENIDO PRINCIPAL */
+.flex-container {
+    display: flex;
+}
+
+#main {
+    border-left: 1px dashed grey;
+    order: 2;
+    padding: 6px;
+}
+
+#main h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #122963;
+    background-image: url(images/feature_bug.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-bottom: 2px solid #AFF40F;
+    margin-bottom: 0.5em;
+}
+
+#main p a {
+    text-decoration: underline dashed 1px #AFF40F;
+}
+
+#main p {
+    margin-bottom: 0.5em;
+}
+
+#main h2 {
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1.25em;
+    color: #1d3779;
+    border-bottom: 1px dotted rgb(221, 221, 221);
+}
+
+#main h2.warning {
+    background-image: url(images/warning.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 1.65em;
+}
+
+/* --------------------------------- */
+#news {
+    order: 3;
+    width: 25%;
+    min-width: 160px;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/column_bg.png);
+}
+
+#news h2 {
+    background-image: url(images/bg_newshead.png);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 0.15em;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    height: 50px;
+    /* No consigo alinear el h2 abajo del contenedor y no se porque. 
+    Mas de 30 min buscando posibles soluciones */
+    display: inline;
+    vertical-align: bottom;
+}
+
+#news a {
+    background-image: url(images/bg_story.png);
+    border-bottom: 1px dashed greenyellow;
+    padding: 6px 2px;
+    font-size: 0.74em;
+    color: #eee;
+    padding-left: .4em;
+}
+
+#news a .title {
+    color: #FDD324;
+}
+
+#news a:hover .title {
+    color: #000;
+    font-weight: 600;
+}
+
+#news a:hover {
+    color: #40681D;
+    background-image: url(images/bg_story_high.png);
+}
+
+/* --------------------------------- */
+#nav {
+    order: 1;
+    width: 25%;
+    min-width: 160px;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainNav {
+    margin-bottom: 1.5em;
+}
+
+#mainNav ul {
+    background-color: #E1E1E1;
+    margin-top: 1.4em;
+    border-top: 1px dashed grey;
+}
+
+#mainNav ul li {
+    padding: 6px 30px;
+    border-bottom: 1px dashed grey;
+}
+
+#mainNav ul li a {
+    color: #333;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+#mainNav ul li.selected a {
+    font-weight: 600;
+}
+
+#mainNav ul li.selected {
+    background-color: #f5f5f5;
+}
+
+#mainNav ul li:hover a {
+    font-weight: 600;
+}
+
+#mainNav ul li:hover {
+    background-color: #AFF40F;
+}
+
+#mainNav ul li:first-of-type {
+    background-image: url(images/home.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#mainNav ul li:nth-of-type(2) {
+    background-image: url(images/bg_here.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 0.5em);
+    /* Otra opcion es poner simplemente 'right', pero se queda demasiado a la derecha */
+    background-position-y: center;
+}
+
+#mainNav ul li:nth-of-type(3),
+#mainNav ul li:nth-of-type(4),
+#mainNav ul li:nth-of-type(5),
+#mainNav ul li:nth-of-type(6) {
+    background-image: url(images/link.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#nav p {
+    color: red;
+    font-size: 0.65em;
+    padding: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.2;
+}
+
+#nav .natEx {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav .natEx p {
+    text-align: center;
+}
+
+#nav .natEx p a {
+    color: #333;
+    font-weight: 600;
+}
+
+#nav .natEx p a:hover {
+    color: #235321;
+    font-weight: 600;
+}
+
+/* --------------------------------- */
+/* FOOTER */
+#legal {
+    border-top: 1px solid grey;
+    font-size: 0.8em;
+    text-indent: 1.5em;
+    padding: .25em;
+    font-style: italic;
+}
+
+/* USO DE MEDIA QUERIES
+Primer sprint: Ajuste con salto en 780px y paso directamente a mobile.
+Posibilidad de mejora adaptando a formatos std 0 - 640 - 1280 incluyendo tablets
+*/
+
+@media all and (max-width:780px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* NAV */
+    #nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #nav ul {
+        margin-top: 0;
+    }
+
+    #mainNav {
+        margin-bottom: .25em;
+    }
+
+    #nav p {
+        padding-bottom: 0;
+    }
+
+    /* NEWS */
+    #news {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #news h2 {
+        background-image: url(images/bg_newshead.png), url(images/bg_newshead-overflow.png);
+        background-repeat: repeat-y, repeat;
+    }
+
+    #news a {
+        background-image: url(images/bg_story.png), url(images/bg_story-overflow.png);
+        background-repeat: repeat-y, repeat;
+    }
+
+    #news a:hover {
+        color: #40681D;
+        background-image: url(images/bg_story_high.png), url(images/bg_story_high-overflow.png);
+        background-repeat: repeat-y, repeat;
+    }
+}
