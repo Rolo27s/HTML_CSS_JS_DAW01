@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Jose Rodriguez Lopez" />
+    <meta name="description" content="Sitio web dedicado a la venta de libros de todo tipo. Lugar de confianza donde aumentar tu nivel cultural." />
+    <meta name="keywords" content="Libro, Casa, Lectura, Ebook, Audiolibro, Epub, Lectores, revistas, articulos, saga, gratis" />
+    <meta name="copyright" content="Copyright owner" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalice.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/icon.png" type="image/x-icon">
+    <title>Francisco Jose Rodriguez</title>
+</head>
+
+<body>
+    <div class="cointainerGeneral">
+        <header>
+            <ul class="containerHeader1">
+                <li><a href="">Descárgate nuestra App</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Estado de tu pedido</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Venta a empresas e instituciones</a></li>
+            </ul>
+            <div class="containerHeader2">
+                <form action="/action_page.php" method="get" class="containerHeader2_form">
+                    <img src="imagenes/logo.jpg" alt="logo" width="120px">
+                    <input type="text" id="Logo" name="Logo" placeholder="Busca por autor, título, género, ISBN" size="30">
+                </form>
+                <ul class="containerHeader2_action">
+                    <li><a href="">Librerías</a></li>
+                    <li><a href="">Identifícate</a></li>
+                    <li><a href="">Cesta</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="containerHeader3">
+                    <li><a href="">Imprescindibles</a></li>
+                    <li><a href="">Ficción</a></li>
+                    <li><a href="">No Ficción</a></li>
+                    <li><a href="">Infantil</a></li>
+                    <li><a href="">Juvenil</a></li>
+                    <li><a href="">Cómic y Manga</a></li>
+                    <li><a href="">Formación</a></li>
+                    <li><a href="">Papelería</a></li>
+                    <li><a href="">eBooks</a></li>
+                    <li><a href="">Ofertas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- EL FLEX CONTAINER TIENE COMO OBJETIVO CONTROLAR LA ESTRUCTURA BASICA DEL MAIN.
+        LO HE PENSADO DE TAL MANERA QUE SOLO VOY A CONTROLAR UNA COLUMNA Y 3 FILAS EN LA ESTRUCTURA GENERAL DEL MAIN -->
+        <main class="flex-container">
+            <div class="bannerMain">
+                <span>HOY <b> 5% dto.</b> y <br> ENVÍOS <b>GRATIS</b></span>
+                <div class="bannerMain-text">
+                    <div>
+                        <h1>Llénate de lecturas</h1>
+                        <p>Este fin de semana disfruta gastos GRATIS sin pedido mínimo y 5% de dto.</p>
+                    </div>
+                    <button>VER LIBROS</button>
+                </div>
+            </div>
+
+            <div class="contentMain">
+                <figure>
+                    <img src="imagenes/foto3.PNG" alt="foto3" style="width:100%">
+                    <p>Cumplimos 100 años. <br> Orgullosos de nuestra historia</p>
+                    <button>LEER MÁS</button>
+                </figure>
+                <figure>
+                    <img src="imagenes/foto4.PNG" alt="foto4" style="width:100%">
+                    <p>Compra online, recoge en librería</p>
+                    <button>VER MÁS</button>
+                </figure>
+                <figure>
+                    <img src="imagenes/foto5.PNG" alt="foto5" style="width:100%">
+                    <p>Disfruta gratis las ventajas de ser Socio</p>
+                    <button class="boton-rosa">UNIRME GRATIS</button>
+                </figure>
+            </div>
+
+            <div class="pseudoFooterMain">
+                    <img src="imagenes/foto1.PNG" alt="foto1" style="width:100%">
+                    <div>
+                        <p>Regalos para el Día del Padre</p>
+                        <button>VER MÁS</button>
+                    </div>
+                    <div>
+                        <p>Descubre nuestra revista de primavera</p>
+                        <button>VER LIBROS</button>
+                    </div>
+                        <img src="imagenes/foto2.PNG" alt="foto2" style="width:100%">
+            </div>
+        </main>
+
+        <aside>
+            <h2><img src="imagenes/redes/ico10.png" alt="correo" height="50"> Recibe nuestras novedades en libros en tu email</h2>
+            <p>ESPASA CALPE, S.A. (Casa del Libro) tratará tus datos personales para informarte de nuestras novedades y descuentos. Conservaremos tus datos mientras no te des de baja o nos solicites su supresión. Podrás ejercer los derechos de acceso, supresión, rectificación, oposición, limitación y portabilidad, mediante carta a ESPASA CALPE, S.A. (Casa del Libro), Apartado de Correos 221 de Barcelona o remitiendo un email a protecciondedatos@casadellibro.com. Asimismo, cuando lo consideres oportuno, podrás presentar una reclamación ante la Agencia Española de protección de datos. Podrás ponerte en contacto con nuestro Delegado de Protección de Datos mediante escrito dirigido a dpo@planeta.es o a Grupo Planeta, At.: Delegado de Protección de Datos, Avda. Diagonal 662-664, 08034 Barcelona.</p>
+            <form action="/action_page.php" method="get" class="form-flex-aside">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" size="50">
+                <input type="button" value="SUSCRIBIRME">
+            </form>
+        </aside>
+
+        <!-- EL PLANTEAMIENTO DEL FOOTER VA A SER UNA LINEA FLEX CON LOS ICONOS Y LUEGO OTRA LINEA FLEX CON 4 DIVS Y CADA DIV VOLVERA A SER FLEX CON DIRECTION COLUMN. NO VEO CLARO EL GRID :)....MEH VENGA ME ANIMO CON LA ULTIMA PARTE QUE SI ESTA CLARA -->
+        <footer>
+            <div class="footerIcons">
+                <div class="icons-ini">
+                    <a href=""><img src="imagenes/redes/ico1.png" alt="ico1" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico2.png" alt="ico2" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico3.png" alt="ico3" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico4.png" alt="ico4" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico5.png" alt="ico5" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico6.png" alt="ico6" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico7.png" alt="ico7" width="30"></a>
+                    <a href=""><img src="imagenes/redes/ico8.png" alt="ico8" width="30"></a>
+                </div>
+                <div class="icons-fin">
+                    <p>Excelente</p>
+                    <img src="imagenes/redes/ico9.png" alt="ico9">
+                    <img src="imagenes/redes/ico9.png" alt="ico9">
+                    <img src="imagenes/redes/ico9.png" alt="ico9">
+                    <img src="imagenes/redes/ico9.png" alt="ico9">
+                    <p class="boldtext">Trustpilot</p>
+                </div>
+            </div>
+
+            <div class="grid-container_footer">
+                <p class="footertitle1">Casa del Libro</p>
+                <p class="footertitle2">Ayuda</p>
+                <p class="footertitle3">Servicios</p>
+                <p class="footertitle4">Información legal</p>
+
+                <div class="list1">
+                    <ul>
+                        <li><a href="">Quienes somos</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Nuestras librerias</a></li>
+                        <li><a href="">Casa del Libro México</a></li>
+                        <li><a href="">Casa del Libro Colombia</a></li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <ul>
+                        <li><a href="">Quienes somos</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Nuestras librerias</a></li>
+                        <li><a href="">Casa del Libro México</a></li>
+                        <li><a href="">Casa del Libro Colombia</a></li>
+                    </ul>
+                </div>
+                <div class="list3">
+                    <ul>
+                        <li><a href="">Quienes somos</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Nuestras librerias</a></li>
+                        <li><a href="">Casa del Libro México</a></li>
+                        <li><a href="">Casa del Libro Colombia</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Nuestras librerias</a></li>
+                        <li><a href="">Casa del Libro México</a></li>
+                    </ul>
+                </div>
+                <div class="list4">
+                    <ul>
+                        <li><a href="">Quienes somos</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Nuestras librerias</a></li>
+                        <li><a href="">Casa del Libro México</a></li>
+                        <li><a href="">Casa del Libro Colombia</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Nuestras librerias</a></li>
+                        <li><a href="">Casa del Libro México</a></li>
+                    </ul>
+                </div>
+                <img class="grid-center" src="imagenes/pie/img1.jpg" alt="imgpie1">
+                <img class="grid-center" src="imagenes/pie/img2.jpg" alt="imgpie2">
+                <img class="grid-center" src="imagenes/pie/img3.jpg" alt="imgpie3">
+                <img class="grid-center" src="imagenes/pie/img4.jpg" alt="imgpie4">
+                <div class="gridDobleCol1">Copyright © 2023 Casa del Libro. Todos los derechos reservados</div>
+                <div class="gridDobleCol2">España</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
